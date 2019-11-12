@@ -1,0 +1,13 @@
+<script>
+  function select(name) {
+    window.top.postMessage({
+      type: 'customer-selected',
+      name: name
+    }, "*")
+  }
+</script>
+
+<ul>
+  <li>João <button onclick="select('João')">Selecionar</button></li>
+  <li>José <button onclick="select('José')">Selecionar</button></li>
+</ul>

@@ -1,0 +1,16 @@
+<div>
+  Neste modelo o template do component Vue está declarado na aplicação cliente.
+  O template do componente Vue poderia estar declarado junto com o componente (aí seria somente necessário declarar o ponto de montagem do Vue), ficaria quase
+  igual ao web-component, com a vantagem de compartilhar estilos com a aplicação cliente.
+</div>
+
+<div id="hostedComponent">
+  <hosted-component redirect-to="/carts/new" />
+</div>
+
+<template type="text/x-template" id="hostedTemplate">
+  <ul>
+    <li v-if="customers.length == 0">Carregando com template declarado no app cliente...</li>
+    <li v-else v-for="c in customers">{{c}} <button @click="select(c)">Selecionar</button></li>
+  </ul>
+</template>

@@ -1,0 +1,17 @@
+<script>
+window.onmessage = function(event) {
+  if (event.data.type == 'customer-selected') {
+    location.assign('<%= Routes.cart_path(@conn, :new) %>' + '?customer=' + event.data.name)
+  }
+}
+</script>
+
+<div>
+  Neste modelo a aplicação cliente embarcaria um iframe com a aplicação que possui os clientes. A comunicação e redirects pode ser feita por javascript.
+</div>
+
+<h1>Selecione um cliente</h1>
+
+<iframe src="<%= Routes.i_frame_path(@conn, :select) %>" style="height: 300px">
+
+</iframe>

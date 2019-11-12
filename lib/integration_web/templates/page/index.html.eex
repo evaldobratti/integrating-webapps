@@ -1,0 +1,18 @@
+<section class="row">
+  <article class="column">
+    <ul>
+      <li>
+        <a href="<%= Routes.i_frame_path(@conn, :index)%>">IFrame</a>
+      </li>
+      <li>
+        <a href="<%= Routes.web_component_path(@conn, :index) %>">Web Component</a>
+      </li>
+      <li>
+        <a href="<%= Routes.hosted_component_path(@conn, :index) %>">Hosted Component</a>
+      </li>
+      <li>
+        <a href="<%= Routes.select_redirect_path(@conn, :index, redirectTo: Routes.cart_path(@conn, :new)) %>">Select Redirect</a>
+      </li>
+    </ul>
+  </article>
+</section>

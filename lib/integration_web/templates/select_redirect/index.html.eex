@@ -1,0 +1,8 @@
+<div>
+  Neste modelo o fluxo seria redirecionado integralmente para outra aplicação, pedindo para ela que uma vez selecionado o cliente, ele seja redirecionado para o parametro informado na url.
+</div>
+
+<ul>
+  <li>João <a href="<%= @conn.params["redirectTo"] <> "?customer=João" %>">Selecionar</a></li>
+  <li>João <a href="<%= @conn.params["redirectTo"] <> "?customer=José" %>">Selecionar</a></li>
+</ul>

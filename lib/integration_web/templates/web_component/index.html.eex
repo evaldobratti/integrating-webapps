@@ -1,0 +1,6 @@
+<div>
+Neste modelo o Vue é utilizado para declarar um web component, mas poderia ser qualquer outro framework também.
+Um dos problemas de web component é que não compartilha estilos da aplicação cliente.
+</div>
+
+<customer-selector redirect-to="/carts/new" />

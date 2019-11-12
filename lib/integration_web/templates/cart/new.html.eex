@@ -1,0 +1,1 @@
+Carrinho sendo criado com o cliente <%= @conn.params["customer"] %>
